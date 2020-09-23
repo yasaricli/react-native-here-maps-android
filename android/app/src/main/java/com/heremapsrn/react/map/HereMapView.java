@@ -22,6 +22,7 @@ import com.heremapsrn.R;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class HereMapView extends MapView {
 
@@ -56,7 +57,9 @@ public class HereMapView extends MapView {
                     map = new Map();
                     setMap(map);
 
+                    // set schema and language
                     map.setMapScheme(Map.Scheme.NORMAL_DAY);
+                    map.setMapDisplayLanguage(Locale.getDefault().getDisplayLanguage());
 
                     mapIsReady = true;
 
