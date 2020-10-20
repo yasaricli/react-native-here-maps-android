@@ -59,7 +59,7 @@ public class HereMapView extends MapView {
 
                     // set schema and language
                     map.setMapScheme(Map.Scheme.NORMAL_DAY);
-                    map.setMapDisplayLanguage(Locale.getDefault());
+                    // map.setMapDisplayLanguage(Locale.getDefault());
 
                     mapIsReady = true;
 
